@@ -2,99 +2,128 @@ import pygame
 import sys
 import os
 from tkinter import *
+from songs import OldMac
 
 pygame.init()
 
-def value_A():
-    num1.set("A")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "A.wav")
-    sound.play()
-    return
-def value_As():
-    num1.set("A#")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "A#.wav")
-    sound.play()
-    return
-def value_B():
-    num1.set("B")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "B.wav")
-    sound.play()
-    return
-def value_C2():
-    num1.set("C2")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "C2.wav")
-    sound.play()
-    return
-def value_Cs2():
-    num1.set("C#2")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "C#2.wav")
-    sound.play()
-    return
-def value_D2():
-    num1.set("D2")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "D2.wav")
-    sound.play()
-    return
-def value_Ds2():
-    num1.set("D#2")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "D#2.wav")
-    sound.play()
-    return
-def value_E2():
-    num1.set("E2")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "E2.wav")
-    sound.play()
-    return
-def value_F2():
-    num1.set("F2")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "F2.wav")
-    sound.play()
-    return
-def value_Fs2():
-    num1.set("F#2")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "F#2.wav")
-    sound.play()
-    return
-def value_G2():
-    num1.set("G2")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "G2.wav")
-    sound.play()
-    return
-def value_Gs2():
-    num1.set("G#2")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "G#2.wav")
-    sound.play()
-    return
+record = []
+
+##def value_A():
+##    num1.set("A")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "A.wav")
+##    sound.play()
+##    global record
+##    record.append(value_A)
+##    return
+##def value_As():
+##    num1.set("A#")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "A#.wav")
+##    sound.play()
+##    global record
+##    record.append(value_As)
+##    return
+##def value_B():
+##    num1.set("B")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "B.wav")
+##    sound.play()
+##    global record
+##    record.append(value_B)
+##    return
+##def value_C2():
+##    num1.set("C2")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "C2.wav")
+##    sound.play()
+##    global record
+##    record.append(value_C2)
+##    return
+##def value_Cs2():
+##    num1.set("C#2")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "C#2.wav")
+##    sound.play()
+##    global record
+##    record.append(value_Cs2)
+##    return
+##def value_D2():
+##    num1.set("D2")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "D2.wav")
+##    sound.play()
+##    global record
+##    record.append(value_D2)
+##    return
+##def value_Ds2():
+##    num1.set("D#2")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "D#2.wav")
+##    sound.play()
+##    global record
+##    record.append(value_Ds2)
+##    return
+##def value_E2():
+##    num1.set("E2")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "E2.wav")
+##    sound.play()
+##    global record
+##    record.append(value_E2)
+##    return
+##def value_F2():
+##    num1.set("F2")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "F2.wav")
+##    sound.play()
+##    global record
+##    record.append(value_F2)
+##    return
+##def value_Fs2():
+##    num1.set("F#2")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "F#2.wav")
+##    sound.play()
+##    global record
+##    record.append(value_Fs2)
+##    return
+##def value_G2():
+##    num1.set("G2")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "G2.wav")
+##    sound.play()
+##    global record
+##    record.append(value_G2)
+##    return
+##def value_Gs2():
+##    num1.set("G#2")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "G#2.wav")
+##    sound.play()
+##    global record
+##    record.append(value_Gs2)
+##    return
 def value_A2():
     num1.set("A2")
     directory = os.getcwd()
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "A2.wav")
     sound.play()
+    global record
+    record.append(value_A2)
     return
 def value_As2():
     num1.set("A#2")
@@ -102,6 +131,8 @@ def value_As2():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "A#2.wav")
     sound.play()
+    global record
+    record.append(value_As2)
     return
 def value_B2():
     num1.set("B2")
@@ -109,6 +140,8 @@ def value_B2():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "B2.wav")
     sound.play()
+    global record
+    record.append(value_B2)
     return
 def value_C3():
     num1.set("C3")
@@ -116,6 +149,8 @@ def value_C3():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "C3.wav")
     sound.play()
+    global record
+    record.append(value_C3)
     return
 def value_Cs3():
     num1.set("C#3")
@@ -123,6 +158,8 @@ def value_Cs3():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "C#3.wav")
     sound.play()
+    global record
+    record.append(value_Cs3)
     return
 def value_D3():
     num1.set("D3")
@@ -130,6 +167,8 @@ def value_D3():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "D3.wav")
     sound.play()
+    global record
+    record.append(value_D3)
     return
 def value_Ds3():
     num1.set("D#3")
@@ -137,6 +176,8 @@ def value_Ds3():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "D#3.wav")
     sound.play()
+    global record
+    record.append(value_Ds3)
     return
 def value_E3():
     num1.set("E3")
@@ -144,6 +185,8 @@ def value_E3():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "E3.wav")
     sound.play()
+    global record
+    record.append(value_E3)
     return
 def value_F3():
     num1.set("F3")
@@ -151,6 +194,8 @@ def value_F3():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "F3.wav")
     sound.play()
+    global record
+    record.append(value_F3)
     return
 def value_Fs3():
     num1.set("F#3")
@@ -165,6 +210,8 @@ def value_G3():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "G3.wav")
     sound.play()
+    global record
+    record.append(value_G3)
     return
 def value_Gs3():
     num1.set("G#3")
@@ -172,6 +219,8 @@ def value_Gs3():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "G#3.wav")
     sound.play()
+    global record
+    record.append(value_Gs3)
     return
 def value_A3():
     num1.set("A3")
@@ -179,6 +228,8 @@ def value_A3():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "A3.wav")
     sound.play()
+    global record
+    record.append(value_A3)
     return
 def value_As3():
     num1.set("A#3")
@@ -186,6 +237,8 @@ def value_As3():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "A#3.wav")
     sound.play()
+    global record
+    record.append(value_As3)
     return
 def value_B3():
     num1.set("B3")
@@ -200,6 +253,8 @@ def value_C4():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "C4.wav")
     sound.play()
+    global record
+    record.append(value_C4)
     return
 def value_Cs4():
     num1.set("C#4")
@@ -207,6 +262,8 @@ def value_Cs4():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "C#4.wav")
     sound.play()
+    global record
+    record.append(value_Cs4)
     return
 def value_D4():
     num1.set("D4")
@@ -214,6 +271,8 @@ def value_D4():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "D4.wav")
     sound.play()
+    global record
+    record.append(value_D4)
     return
 def value_Ds4():
     num1.set("D#4")
@@ -221,6 +280,8 @@ def value_Ds4():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "D#4.wav")
     sound.play()
+    global record
+    record.append(value_Ds4)
     return
 def value_E4():
     num1.set("E4")
@@ -228,6 +289,8 @@ def value_E4():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "E4.wav")
     sound.play()
+    global record
+    record.append(value_E4)
     return
 def value_F4():
     num1.set("F4")
@@ -235,6 +298,8 @@ def value_F4():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "F4.wav")
     sound.play()
+    global record
+    record.append(value_F4)
     return
 def value_Fs4():
     num1.set("F#4")
@@ -242,6 +307,8 @@ def value_Fs4():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "F#4.wav")
     sound.play()
+    global record
+    record.append(value_A4)
     return
 def value_G4():
     num1.set("G4")
@@ -249,6 +316,8 @@ def value_G4():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "G4.wav")
     sound.play()
+    global record
+    record.append(value_G4)
     return
 def value_Gs4():
     num1.set("G#4")
@@ -256,6 +325,8 @@ def value_Gs4():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "G#4.wav")
     sound.play()
+    global record
+    record.append(value_Gs4)
     return
 def value_A4():
     num1.set("A4")
@@ -263,6 +334,8 @@ def value_A4():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "A4.wav")
     sound.play()
+    global record
+    record.append(value_A4)
     return
 def value_As4():
     num1.set("A#4")
@@ -270,6 +343,8 @@ def value_As4():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "A#4.wav")
     sound.play()
+    global record
+    record.append(value_As4)
     return
 def value_B4():
     num1.set("B4")
@@ -277,6 +352,8 @@ def value_B4():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "B4.wav")
     sound.play()
+    global record
+    record.append(value_B4)
     return
 def value_C5():
     num1.set("C5")
@@ -284,6 +361,8 @@ def value_C5():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "C5.wav")
     sound.play()
+    global record
+    record.append(value_C5)
     return
 def value_Cs5():
     num1.set("C#5")
@@ -291,6 +370,8 @@ def value_Cs5():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "C#5.wav")
     sound.play()
+    global record
+    record.append(value_Cs5)
     return
 def value_D5():
     num1.set("D5")
@@ -298,6 +379,8 @@ def value_D5():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "D5.wav")
     sound.play()
+    global record
+    record.append(value_D5)
     return
 def value_Ds5():
     num1.set("D#5")
@@ -305,6 +388,8 @@ def value_Ds5():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "D#5.wav")
     sound.play()
+    global record
+    record.append(value_A4)
     return
 def value_E5():
     num1.set("E5")
@@ -312,6 +397,8 @@ def value_E5():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "E5.wav")
     sound.play()
+    global record
+    record.append(value_E5)
     return
 def value_F5():
     num1.set("F5")
@@ -319,6 +406,8 @@ def value_F5():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "F5.wav")
     sound.play()
+    global record
+    record.append(value_F5)
     return
 def value_Fs5():
     num1.set("F#5")
@@ -326,6 +415,8 @@ def value_Fs5():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "F#5.wav")
     sound.play()
+    global record
+    record.append(value_Fs5)
     return
 def value_G5():
     num1.set("G5")
@@ -333,6 +424,8 @@ def value_G5():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "G5.wav")
     sound.play()
+    global record
+    record.append(value_G5)
     return
 def value_Gs5():
     num1.set("G#5")
@@ -340,6 +433,8 @@ def value_Gs5():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "G#5.wav")
     sound.play()
+    global record
+    record.append(value_Gs5)
     return
 def value_A5():
     num1.set("A5")
@@ -347,6 +442,8 @@ def value_A5():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "A5.wav")
     sound.play()
+    global record
+    record.append(value_A5)
     return
 def value_As5():
     num1.set("A#5")
@@ -354,6 +451,8 @@ def value_As5():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "A#5.wav")
     sound.play()
+    global record
+    record.append(value_As5)
     return
 def value_B5():
     num1.set("B5")
@@ -361,6 +460,8 @@ def value_B5():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "B5.wav")
     sound.play()
+    global record
+    record.append(value_B5)
     return
 def value_C6():
     num1.set("C6")
@@ -368,6 +469,8 @@ def value_C6():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "C6.wav")
     sound.play()
+    global record
+    record.append(value_C6)
     return
 def value_Cs6():
     num1.set("C#6")
@@ -375,6 +478,8 @@ def value_Cs6():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "C#6.wav")
     sound.play()
+    global record
+    record.append(value_Cs6)
     return
 def value_D6():
     num1.set("D6")
@@ -382,6 +487,8 @@ def value_D6():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "D6.wav")
     sound.play()
+    global record
+    record.append(value_D6)
     return
 def value_Ds6():
     num1.set("D#6")
@@ -389,6 +496,8 @@ def value_Ds6():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "D#6.wav")
     sound.play()
+    global record
+    record.append(value_Ds6)
     return
 def value_E6():
     num1.set("E6")
@@ -396,6 +505,8 @@ def value_E6():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "E6.wav")
     sound.play()
+    global record
+    record.append(value_E6)
     return
 def value_F6():
     num1.set("F6")
@@ -403,6 +514,8 @@ def value_F6():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "F6.wav")
     sound.play()
+    global record
+    record.append(value_F6)
     return
 def value_Fs6():
     num1.set("F#6")
@@ -410,6 +523,8 @@ def value_Fs6():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "F#6.wav")
     sound.play()
+    global record
+    record.append(value_Fs6)
     return
 def value_G6():
     num1.set("G6")
@@ -417,6 +532,8 @@ def value_G6():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "G6.wav")
     sound.play()
+    global record
+    record.append(value_G6)
     return
 def value_Gs6():
     num1.set("G#6")
@@ -424,58 +541,94 @@ def value_Gs6():
     path = directory + "/Notes/"
     sound = pygame.mixer.Sound(path + "G#6.wav")
     sound.play()
+    global record
+    record.append(value_Gs6)
     return
-def value_A6():
-    num1.set("A6")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "A6.wav")
-    sound.play()
-    return
-def value_As6():
-    num1.set("A#6")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "A#6.wav")
-    sound.play()
-    return
-def value_B6():
-    num1.set("B6")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "B6.wav")
-    sound.play()
-    return
-def value_C7():
-    num1.set("C7")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "C7.wav")
-    sound.play()
-    return
-def value_Cs7():
-    num1.set("C#7")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "C#7.wav")
-    sound.play()
-    return
-def value_D7():
-    num1.set("D7")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "D7.wav")
-    sound.play()
-    return
-def value_Ds7():
-    num1.set("D#7")
-    directory = os.getcwd()
-    path = directory + "/Notes/"
-    sound = pygame.mixer.Sound(path + "D#7.wav")
-    sound.play()
-    return
+##def value_A6():
+##    num1.set("A6")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "A6.wav")
+##    sound.play()
+##    global record
+##    record.append(value_As6)
+##    return
+##def value_As6():
+##    num1.set("A#6")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "A#6.wav")
+##    sound.play()
+##    global record
+##    record.append(value_As6)
+##    return
+##def value_B6():
+##    num1.set("B6")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "B6.wav")
+##    sound.play()
+##    global record
+##    record.append(value_B6)
+##    return
+##def value_C7():
+##    num1.set("C7")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "C7.wav")
+##    sound.play()
+##    global record
+##    record.append(value_C7)
+##    return
+##def value_Cs7():
+##    num1.set("C#7")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "C#7.wav")
+##    sound.play()
+##    global record
+##    record.append(value_Cs7)
+##    return
+##def value_D7():
+##    num1.set("D7")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "D7.wav")
+##    sound.play()
+##    global record
+##    record.append(value_D7)
+##    return
+##def value_Ds7():
+##    num1.set("D#7")
+##    directory = os.getcwd()
+##    path = directory + "/Notes/"
+##    sound = pygame.mixer.Sound(path + "D#7.wav")
+##    sound.play()
+##    global record
+##    record.append(value_Ds7)
+##    return
 
-
+## Plays back the notes that were pressed starting at the first note. 
+def song():
+    global record
+    num = len(record)
+    global entrytext
+    inputNum = entrytext.get()
+    if inputNum.strip():
+        inputNum = int(inputNum)
+    else:
+        inputNum = 3  
+    for i in range (0, num):
+        record[i]()
+        print (record[i])
+        pygame.time.delay((inputNum) * 100)
+        record.remove(record[i])
+    return
+##Erases the notes that have been pressed. Allows the user to make a new song
+def deleteSong():
+    global record
+    record = []
+    return
 
 root = Tk()
 frame = Frame(root)
@@ -488,9 +641,20 @@ num1 = StringVar()
 
 topframe = Frame(root)
 topframe.pack(side = TOP)
+
 txtDisplay=Entry(frame, textvariable = num1, bd=20, insertwidth=1, font = 30, justify='center', width=4,)
 txtDisplay.pack(side=TOP)
-
+label = Label (frame, text= "Playback Speed(1-9)")
+label.pack(side = TOP)
+entrytext = StringVar()
+txt= Entry(frame, textvariable=entrytext,  width=2, )
+txt.pack(side = TOP)
+button2 = Button(frame, padx=1, pady=2, width=9, height = 1, bd=8, text="Delete Song", activebackground="#ff4d4d", command=deleteSong)
+button2.pack(side=RIGHT)
+button00 = Button(frame, state=DISABLED, padx=0, height = 3, width=3, pady=0, relief=RIDGE)
+button00.pack(side=RIGHT)
+button1 = Button(frame, padx=1, pady=2, width=9, height = 1, bd=8, text="Playback", activebackground="#ff4d4d", command=song)
+button1.pack(side=RIGHT)
 
 #----------------------------------------------------BLACK KEYS--------------------------------------------------------
 
@@ -523,6 +687,7 @@ txtDisplay.pack(side=TOP)
 ##
 ##button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=1, pady=0, relief=RIDGE)
 ##button00.pack(side=LEFT)
+
 button6 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="A#2 ", bg="black", fg="white", activebackground="#ff4d4d", command=value_As2)
 button6.pack(side=LEFT)
 
@@ -744,7 +909,10 @@ button28.pack(side=LEFT)
 ##button32.pack(side=LEFT)
 
 
+
+
+
 root.mainloop()
-                 
+
 
 
