@@ -8,7 +8,7 @@ pygame.init()
 
 record = []
 
-def record_A2():
+def record_A2(event=None):
     global record
     record.append(value_A2)
     value_A2()
@@ -20,7 +20,7 @@ def value_A2():
     sound = pygame.mixer.Sound(path + "A2.wav")
     sound.play()
     return
-def record_As2():
+def record_As2(event=None):
     global record
     record.append(value_As2)
     value_As2()
@@ -32,7 +32,7 @@ def value_As2():
     sound = pygame.mixer.Sound(path + "A#2.wav")
     sound.play()
     return
-def record_B2():
+def record_B2(event=None):
     global record
     record.append(value_B2)
     value_B2()
@@ -44,7 +44,7 @@ def value_B2():
     sound = pygame.mixer.Sound(path + "B2.wav")
     sound.play()
     return
-def record_C3():
+def record_C3(event=None):
     global record
     record.append(value_C3)
     value_C3()
@@ -57,7 +57,7 @@ def value_C3():
     sound = pygame.mixer.Sound(path + "C3.wav")
     sound.play()
     return
-def record_Cs3():
+def record_Cs3(event=None):
     global record
     record.append(value_Cs3)
     value_Cs3()
@@ -69,7 +69,7 @@ def value_Cs3():
     sound = pygame.mixer.Sound(path + "C#3.wav")
     sound.play()
     return
-def record_D3():
+def record_D3(event=None):
     global record
     record.append(value_D3)
     value_D3()
@@ -81,7 +81,7 @@ def value_D3():
     sound = pygame.mixer.Sound(path + "D3.wav")
     sound.play()
     return
-def record_Ds3():
+def record_Ds3(event=None):
     global record
     record.append(value_Ds3)
     value_Ds3()
@@ -93,7 +93,7 @@ def value_Ds3():
     sound = pygame.mixer.Sound(path + "D#3.wav")
     sound.play()
     return
-def record_E3():
+def record_E3(event=None):
     global record
     record.append(value_E3)
     value_E3()
@@ -105,7 +105,7 @@ def value_E3():
     sound = pygame.mixer.Sound(path + "E3.wav")
     sound.play()
     return
-def record_F3():
+def record_F3(event=None):
     global record
     record.append(value_F3)
     value_F3()
@@ -117,7 +117,7 @@ def value_F3():
     sound = pygame.mixer.Sound(path + "F3.wav")
     sound.play()
     return
-def record_Fs3():
+def record_Fs3(event=None):
     global record
     record.append(value_Fs3)
     value_Fs3()
@@ -129,7 +129,7 @@ def value_Fs3():
     sound = pygame.mixer.Sound(path + "F#3.wav")
     sound.play()
     return
-def record_G3():
+def record_G3(event=None):
     global record
     record.append(value_G3)
     value_G3()
@@ -141,7 +141,7 @@ def value_G3():
     sound = pygame.mixer.Sound(path + "G3.wav")
     sound.play()
     return
-def record_Gs3():
+def record_Gs3(event=None):
     global record
     record.append(value_Gs3)
     value_Gs3()
@@ -153,7 +153,7 @@ def value_Gs3():
     sound = pygame.mixer.Sound(path + "G#3.wav")
     sound.play()
     return
-def record_A3():
+def record_A3(event=None):
     global record
     record.append(value_A3)
     value_A3()
@@ -165,7 +165,7 @@ def value_A3():
     sound = pygame.mixer.Sound(path + "A3.wav")
     sound.play()
     return
-def record_As3():
+def record_As3(event=None):
     global record
     record.append(value_As3)
     value_As3()
@@ -177,7 +177,7 @@ def value_As3():
     sound = pygame.mixer.Sound(path + "A#3.wav")
     sound.play()
     return
-def record_B3():
+def record_B3(event=None):
     global record
     record.append(value_B3)
     value_B3()
@@ -189,7 +189,7 @@ def value_B3():
     sound = pygame.mixer.Sound(path + "B3.wav")
     sound.play()
     return
-def record_C4():
+def record_C4(event=None):
     global record
     record.append(value_C4)
     value_C4()
@@ -201,7 +201,7 @@ def value_C4():
     sound = pygame.mixer.Sound(path + "C4.wav")
     sound.play()
     return
-def record_Cs4():
+def record_Cs4(event=None):
     global record
     record.append(value_Cs4)
     value_Cs4()
@@ -213,7 +213,7 @@ def value_Cs4():
     sound = pygame.mixer.Sound(path + "C#4.wav")
     sound.play()
     return
-def record_D4():
+def record_D4(event=None):
     global record
     record.append(value_D4)
     value_D4()
@@ -225,7 +225,7 @@ def value_D4():
     sound = pygame.mixer.Sound(path + "D4.wav")
     sound.play()
     return
-def record_Ds4():
+def record_Ds4(event=None):
     global record
     record.append(value_Ds4)
     value_Ds4()
@@ -237,7 +237,7 @@ def value_Ds4():
     sound = pygame.mixer.Sound(path + "D#4.wav")
     sound.play()
     return
-def record_E4():
+def record_E4(event=None):
     global record
     record.append(value_E4)
     value_E4()
@@ -249,7 +249,7 @@ def value_E4():
     sound = pygame.mixer.Sound(path + "E4.wav")
     sound.play()
     return
-def record_F4():
+def record_F4(event=None):
     global record
     record.append(value_F4)
     value_F4()
@@ -261,7 +261,7 @@ def value_F4():
     sound = pygame.mixer.Sound(path + "F4.wav")
     sound.play()
     return
-def record_Fs4():
+def record_Fs4(event=None):
     global record
     record.append(value_Fs4)
     value_Fs4()
@@ -273,7 +273,7 @@ def value_Fs4():
     sound = pygame.mixer.Sound(path + "F#4.wav")
     sound.play()
     return
-def record_G4():
+def record_G4(event=None):
     global record
     record.append(value_G4)
     value_G4()
@@ -285,7 +285,7 @@ def value_G4():
     sound = pygame.mixer.Sound(path + "G4.wav")
     sound.play()
     return
-def record_Gs4():
+def record_Gs4(event=None):
     global record
     record.append(value_Gs4)
     value_Gs4()
@@ -297,7 +297,7 @@ def value_Gs4():
     sound = pygame.mixer.Sound(path + "G#4.wav")
     sound.play()
     return
-def record_A4():
+def record_A4(event=None):
     global record
     record.append(value_A4)
     value_A4()
@@ -309,7 +309,7 @@ def value_A4():
     sound = pygame.mixer.Sound(path + "A4.wav")
     sound.play()
     return
-def record_As4():
+def record_As4(event=None):
     global record
     record.append(value_As4)
     value_As4()
@@ -321,7 +321,7 @@ def value_As4():
     sound = pygame.mixer.Sound(path + "A#4.wav")
     sound.play()
     return
-def record_B4():
+def record_B4(event=None):
     global record
     record.append(value_B4)
     value_B4()
@@ -333,7 +333,7 @@ def value_B4():
     sound = pygame.mixer.Sound(path + "B4.wav")
     sound.play()
     return
-def record_C5():
+def record_C5(event=None):
     global record
     record.append(value_C5)
     value_C5()
@@ -345,7 +345,7 @@ def value_C5():
     sound = pygame.mixer.Sound(path + "C5.wav")
     sound.play()
     return
-def record_Cs5():
+def record_Cs5(event=None):
     global record
     record.append(value_Cs5)
     value_Cs5()
@@ -357,7 +357,7 @@ def value_Cs5():
     sound = pygame.mixer.Sound(path + "C#5.wav")
     sound.play()
     return
-def record_D5():
+def record_D5(event=None):
     global record
     record.append(value_D5)
     value_D5()
@@ -369,7 +369,7 @@ def value_D5():
     sound = pygame.mixer.Sound(path + "D5.wav")
     sound.play()
     return
-def record_Ds5():
+def record_Ds5(event=None):
     global record
     record.append(value_Ds5)
     value_Ds5()
@@ -381,7 +381,7 @@ def value_Ds5():
     sound = pygame.mixer.Sound(path + "D#5.wav")
     sound.play()
     return
-def record_E5():
+def record_E5(event=None):
     global record
     record.append(value_E5)
     value_E5()
@@ -393,7 +393,7 @@ def value_E5():
     sound = pygame.mixer.Sound(path + "E5.wav")
     sound.play()
     return
-def record_F5():
+def record_F5(event=None):
     global record
     record.append(value_F5)
     value_F5()
@@ -405,7 +405,7 @@ def value_F5():
     sound = pygame.mixer.Sound(path + "F5.wav")
     sound.play()
     return
-def record_Fs5():
+def record_Fs5(event=None):
     global record
     record.append(value_Fs5)
     value_Fs5()
@@ -417,7 +417,7 @@ def value_Fs5():
     sound = pygame.mixer.Sound(path + "F#5.wav")
     sound.play()
     return
-def record_G5():
+def record_G5(event=None):
     global record
     record.append(value_G5)
     value_G5()
@@ -429,7 +429,7 @@ def value_G5():
     sound = pygame.mixer.Sound(path + "G5.wav")
     sound.play()
     return
-def record_Gs5():
+def record_Gs5(event=None):
     global record
     record.append(value_Gs5)
     value_Gs5()
@@ -441,7 +441,7 @@ def value_Gs5():
     sound = pygame.mixer.Sound(path + "G#5.wav")
     sound.play()
     return
-def record_A5():
+def record_A5(event=None):
     global record
     record.append(value_A5)
     value_A5()
@@ -453,7 +453,7 @@ def value_A5():
     sound = pygame.mixer.Sound(path + "A5.wav")
     sound.play()
     return
-def record_As5():
+def record_As5(event=None):
     global record
     record.append(value_As5)
     value_As5()
@@ -465,7 +465,7 @@ def value_As5():
     sound = pygame.mixer.Sound(path + "A#5.wav")
     sound.play()
     return
-def record_B5():
+def record_B5(event=None):
     global record
     record.append(value_B5)
     value_B5()
@@ -477,7 +477,7 @@ def value_B5():
     sound = pygame.mixer.Sound(path + "B5.wav")
     sound.play()
     return
-def record_C6():
+def record_C6(event=None):
     global record
     record.append(value_C6)
     value_C6()
@@ -489,7 +489,7 @@ def value_C6():
     sound = pygame.mixer.Sound(path + "C6.wav")
     sound.play()
     return
-def record_Cs6():
+def record_Cs6(event=None):
     global record
     record.append(value_Cs6)
     value_Cs6()
@@ -501,7 +501,7 @@ def value_Cs6():
     sound = pygame.mixer.Sound(path + "C#6.wav")
     sound.play()
     return
-def record_D6():
+def record_D6(event=None):
     global record
     record.append(value_D6)
     value_D6()
@@ -513,7 +513,7 @@ def value_D6():
     sound = pygame.mixer.Sound(path + "D6.wav")
     sound.play()
     return
-def record_Ds6():
+def record_Ds6(event=None):
     global record
     record.append(value_Ds6)
     value_Ds6()
@@ -525,7 +525,7 @@ def value_Ds6():
     sound = pygame.mixer.Sound(path + "D#6.wav")
     sound.play()
     return
-def record_E6():
+def record_E6(event=None):
     global record
     record.append(value_E6)
     value_E6()
@@ -537,7 +537,7 @@ def value_E6():
     sound = pygame.mixer.Sound(path + "E6.wav")
     sound.play()
     return
-def record_F6():
+def record_F6(event=None):
     global record
     record.append(value_F6)
     value_F6()
@@ -549,7 +549,7 @@ def value_F6():
     sound = pygame.mixer.Sound(path + "F6.wav")
     sound.play()
     return
-def record_Fs6():
+def record_Fs6(event=None):
     global record
     record.append(value_Fs6)
     value_Fs6()
@@ -561,7 +561,7 @@ def value_Fs6():
     sound = pygame.mixer.Sound(path + "F#6.wav")
     sound.play()
     return
-def record_G6():
+def record_G6(event=None):
     global record
     record.append(value_G6)
     value_G6()
@@ -573,7 +573,7 @@ def value_G6():
     sound = pygame.mixer.Sound(path + "G6.wav")
     sound.play()
     return
-def record_Gs6():
+def record_Gs6(event=None):
     global record
     record.append(value_Gs6)
     value_Gs6()
@@ -637,63 +637,72 @@ button1.pack(side=RIGHT)
 
 #----------------------------------------------------BLACK KEYS--------------------------------------------------------
 
-
 button6 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="A#2 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_As2)
 button6.pack(side=LEFT)
+root.bind('1', record_As2)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=3, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
 
 button7 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="C#3 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_Cs3)
 button7.pack(side=LEFT)
+root.bind('2', record_Cs3)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=1, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
 
 button8 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="D#3 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_Ds3)
 button8.pack(side=LEFT)
+root.bind('3', record_Ds3)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=3, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
 
 button9 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="F#3 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_Fs3)
 button9.pack(side=LEFT)
+root.bind('4', record_Fs3)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=1, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
 
 button10 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="G#3 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_Gs3)
 button10.pack(side=LEFT)
+root.bind('5', record_Gs3)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=1, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
 
 button11 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="A#3 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_As3)
 button11.pack(side=LEFT)
+root.bind('6', record_As3)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=3, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
 
 button12 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="C#4 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_Cs4)
 button12.pack(side=LEFT)
+root.bind('7', record_Cs4)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=1, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
 
 button13 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="D#4 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_Ds4)
 button13.pack(side=LEFT)
+root.bind('8', record_Ds4)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=3, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
 
 button14 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="F#4 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_Fs4)
 button14.pack(side=LEFT)
+root.bind('9', record_Fs4)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=1, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
 
 button15 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="G#4 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_Gs4)
 button15.pack(side=LEFT)
+root.bind('0', record_Gs4)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=1, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
@@ -762,34 +771,48 @@ button19.pack(side=LEFT)
 frame1 = Frame(root)
 frame1.pack(side=TOP)
 
-button8 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="A2 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_A2)
+button8 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="A2 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=2, command=record_A2)
 button8.pack(side=LEFT)
+root.bind('-', record_A2)
 button9 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="B2 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_B2)                 
 button9.pack(side=LEFT)
+root.bind('=', record_B2)
 button10 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="C3 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_C3)
 button10.pack(side=LEFT)
+root.bind('q', record_C3)
 button11 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="D3 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_D3)
 button11.pack(side=LEFT)
+root.bind('w', record_D3)
 button12 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="E3 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_E3)
 button12.pack(side=LEFT)
+root.bind('e', record_E3)
 button13 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="F3 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_F3)
 button13.pack(side=LEFT)
+root.bind('r', record_F3)
 button14 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="G3 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_G3)
 button14.pack(side=LEFT)
+root.bind('t', record_G3)
 button15 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="A3 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_A3)
 button15.pack(side=LEFT)
+root.bind('y', record_A3)
 button16 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="B3 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_B3)                 
 button16.pack(side=LEFT)
+root.bind('u', record_B3)
 button17 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="C4 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_C4)
 button17.pack(side=LEFT)
+root.bind('i', record_C4)
 button18 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="D4 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_D4)
 button18.pack(side=LEFT)
+root.bind('o', record_D4)
 button19 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="E4 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_E4)
 button19.pack(side=LEFT)
+root.bind('p', record_E4)
 button20 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="F4 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_F4)
 button20.pack(side=LEFT)
+root.bind('[', record_F4)
 button21 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="G4 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_G4)
 button21.pack(side=LEFT)
+root.bind(']', record_G4)
 button22 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="A4 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_A4)
 button22.pack(side=LEFT)
 button23 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="B4 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_B4)                 
