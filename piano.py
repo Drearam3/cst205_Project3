@@ -1,12 +1,15 @@
+
 import pygame
 import sys
 import os
 from tkinter import *
-from songs import OldMac
+
 
 pygame.init()
 
 record = []
+
+
 
 def record_A2(event=None):
     global record
@@ -592,8 +595,8 @@ def song():
     global record
     num = len(record)
     print(record)
-    global entrytext
-    inputNum = entrytext.get()
+    global v
+    inputNum = v.get()
     if inputNum.strip():
         inputNum = int(inputNum)
     else:
@@ -623,11 +626,29 @@ topframe.pack(side = TOP)
 
 txtDisplay=Entry(frame, textvariable = num1, bd=20, insertwidth=1, font = 30, justify='center', width=4,)
 txtDisplay.pack(side=TOP)
-label = Label (frame, text= "Playback Speed(1-9)")
+
+
+v = IntVar()
+MODES = [
+        ("1"),
+        ("2"),
+        ("3"),
+        ("4"),
+        ("5"),
+        ("6"),
+        ("7"),
+        ]
+v = StringVar()
+v.set("L") # initialize
+
+frame.pack()
+label = Label (frame, text= "Playback Speed(1-7)")
 label.pack(side = TOP)
-entrytext = StringVar()
-txt= Entry(frame, textvariable=entrytext,  width=2, )
-txt.pack(side = TOP)
+for key in MODES:
+    item= Radiobutton(frame, text=key, bd=4, width=12)
+    item.config(indicatoron=0, variable=v, value=int(key))
+    item.pack(side=LEFT)
+
 button2 = Button(frame, padx=1, pady=2, width=9, height = 1, bd=8, text="Delete Song", activebackground="#ff4d4d", command=deleteSong)
 button2.pack(side=RIGHT)
 button00 = Button(frame, state=DISABLED, padx=0, height = 3, width=3, pady=0, relief=RIDGE)
@@ -637,70 +658,70 @@ button1.pack(side=RIGHT)
 
 #----------------------------------------------------BLACK KEYS--------------------------------------------------------
 
-button6 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="A#2 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_As2)
+button6 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, wraplength=30, justify=CENTER, text="A#2 (1)", bg="black", fg="white", activebackground="#ff4d4d", command=record_As2)
 button6.pack(side=LEFT)
 root.bind('1', record_As2)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=3, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
 
-button7 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="C#3 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_Cs3)
+button7 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, wraplength=30, justify=CENTER, text="C#3 (2)", bg="black", fg="white", activebackground="#ff4d4d", command=record_Cs3)
 button7.pack(side=LEFT)
 root.bind('2', record_Cs3)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=1, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
 
-button8 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="D#3 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_Ds3)
+button8 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, wraplength=30, justify=CENTER, text="D#3 (3)", bg="black", fg="white", activebackground="#ff4d4d", command=record_Ds3)
 button8.pack(side=LEFT)
 root.bind('3', record_Ds3)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=3, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
 
-button9 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="F#3 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_Fs3)
+button9 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, wraplength=30, justify=CENTER, text="F#3 (4)", bg="black", fg="white", activebackground="#ff4d4d", command=record_Fs3)
 button9.pack(side=LEFT)
 root.bind('4', record_Fs3)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=1, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
 
-button10 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="G#3 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_Gs3)
+button10 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, wraplength=30, justify=CENTER, text="G#3 (5)", bg="black", fg="white", activebackground="#ff4d4d", command=record_Gs3)
 button10.pack(side=LEFT)
 root.bind('5', record_Gs3)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=1, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
 
-button11 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="A#3 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_As3)
+button11 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, wraplength=30, justify=CENTER, text="A#3 (6)", bg="black", fg="white", activebackground="#ff4d4d", command=record_As3)
 button11.pack(side=LEFT)
 root.bind('6', record_As3)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=3, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
 
-button12 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="C#4 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_Cs4)
+button12 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, wraplength=30, justify=CENTER, text="C#4 (7)", bg="black", fg="white", activebackground="#ff4d4d", command=record_Cs4)
 button12.pack(side=LEFT)
 root.bind('7', record_Cs4)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=1, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
 
-button13 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="D#4 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_Ds4)
+button13 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, wraplength=30, justify=CENTER, text="D#4 (8)", bg="black", fg="white", activebackground="#ff4d4d", command=record_Ds4)
 button13.pack(side=LEFT)
 root.bind('8', record_Ds4)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=3, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
 
-button14 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="F#4 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_Fs4)
+button14 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, wraplength=30, justify=CENTER, text="F#4 (9)", bg="black", fg="white", activebackground="#ff4d4d", command=record_Fs4)
 button14.pack(side=LEFT)
 root.bind('9', record_Fs4)
 
 button00 = Button(topframe, state=DISABLED, padx=0, height = 7, width=1, pady=0, relief=RIDGE)
 button00.pack(side=LEFT)
 
-button15 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, text="G#4 ", bg="black", fg="white", activebackground="#ff4d4d", command=record_Gs4)
+button15 = Button(topframe, padx=3, pady=8, width=2, height = 6, bd=8, wraplength=30, justify=CENTER, text="G#4 (0)", bg="black", fg="white", activebackground="#ff4d4d", command=record_Gs4)
 button15.pack(side=LEFT)
 root.bind('0', record_Gs4)
 
@@ -771,46 +792,46 @@ button19.pack(side=LEFT)
 frame1 = Frame(root)
 frame1.pack(side=TOP)
 
-button8 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="A2 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=2, command=record_A2)
+button8 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, wraplength=20, justify=CENTER, text="A2 (-)", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=2, command=record_A2)
 button8.pack(side=LEFT)
 root.bind('-', record_A2)
-button9 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="B2 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_B2)                 
+button9 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, wraplength=20, justify=CENTER, text="B2 (=)", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_B2)                 
 button9.pack(side=LEFT)
 root.bind('=', record_B2)
-button10 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="C3 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_C3)
+button10 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, wraplength=20, justify=CENTER, text="C3 (G)", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_C3)
 button10.pack(side=LEFT)
 root.bind('q', record_C3)
-button11 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="D3 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_D3)
+button11 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, wraplength=20, justify=CENTER, text="D3 (W)", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_D3)
 button11.pack(side=LEFT)
 root.bind('w', record_D3)
-button12 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="E3 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_E3)
+button12 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, wraplength=20, justify=CENTER, text="E3 (E)", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_E3)
 button12.pack(side=LEFT)
 root.bind('e', record_E3)
-button13 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="F3 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_F3)
+button13 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, wraplength=20, justify=CENTER, text="F3 (R)", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_F3)
 button13.pack(side=LEFT)
 root.bind('r', record_F3)
-button14 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="G3 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_G3)
+button14 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, wraplength=20, justify=CENTER, text="G3 (T)", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_G3)
 button14.pack(side=LEFT)
 root.bind('t', record_G3)
-button15 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="A3 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_A3)
+button15 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, wraplength=20, justify=CENTER, text="A3 (Y)", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_A3)
 button15.pack(side=LEFT)
 root.bind('y', record_A3)
-button16 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="B3 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_B3)                 
+button16 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, wraplength=20, justify=CENTER, text="B3 (U)", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_B3)                 
 button16.pack(side=LEFT)
 root.bind('u', record_B3)
-button17 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="C4 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_C4)
+button17 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, wraplength=20, justify=CENTER, text="C4 (I)", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_C4)
 button17.pack(side=LEFT)
 root.bind('i', record_C4)
-button18 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="D4 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_D4)
+button18 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, wraplength=20, justify=CENTER, text="D4 (O)", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_D4)
 button18.pack(side=LEFT)
 root.bind('o', record_D4)
-button19 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="E4 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_E4)
+button19 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, wraplength=20, justify=CENTER, text="E4 (P)", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_E4)
 button19.pack(side=LEFT)
 root.bind('p', record_E4)
-button20 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="F4 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_F4)
+button20 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, wraplength=20, justify=CENTER, text="F4 ([)", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_F4)
 button20.pack(side=LEFT)
 root.bind('[', record_F4)
-button21 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="G4 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_G4)
+button21 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, wraplength=20, justify=CENTER, text="G4 (])", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_G4)
 button21.pack(side=LEFT)
 root.bind(']', record_G4)
 button22 = Button(frame1, padx=13, pady=16, width = 2, height=8, bd=0, text="A4 ", fg="black", bg="white", activebackground="#ff4d4d", borderwidth=1, command=record_A4)
@@ -848,6 +869,8 @@ button28.pack(side=LEFT)
 
 
 root.mainloop()
+
+
 
 
 
